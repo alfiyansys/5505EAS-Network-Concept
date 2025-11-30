@@ -16,12 +16,11 @@ The final semester assignment is to demonstrate how (L7 Application layer) socke
 
 2. Second project: UDP Pinger Client Impelementations
 	
-	The second assignment is to demonstrate how ping messages are implemented using UDP based connections. The server runtime is provided using python. Main assignment is to write up and implement pinger client. It written on Golang instead of python at first, until it was changed to python as instructed.
+	The second assignment is to demonstrate how ping messages are implemented using UDP based connections. The server runtime is provided using python. Main assignment is to write up and implement pinger client. It written on Golang instead of python at first, until it was changed back to python as instructed.
 
-	Provided python UDP ping server is slightly modified to support debugging purposes.
+	Provided python UDP ping server is slightly modified to support debugging purposes. The randominess is to simulate UDP transmission error.
 
-	The randominess is to simulate UDP transmission error.
+	
+	![Golang based UDP pinger client](./assets/ping-go.png)
 
-	<<SS GOLANG>>
-
-	<<SS PYTHON>>
+	![Python based UDP pinger client](./assets/ping-python.png)
