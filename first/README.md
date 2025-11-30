@@ -1,2 +1,9 @@
 # HIan-HTTP-server
-Final semester assignment for Graduate School, EEPIS
+
+Presequisites: golang
+
+How to run:
+
+```
+go run main.go
+```

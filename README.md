@@ -1,8 +1,13 @@
 Assignment Repository URL is: https://github.com/alfiyansys/5505EAS-Network-Concept
 
+5505EAS-Network-Concept
+===
 Written by M Alfiyan Syamsuddin - 1225800008
+---
 
 The final semester assignment is to demonstrate how (L7 Application layer) socket programming works and its implementations on programming.
+
+---
 
 1. First Assignment: HTTP Server using RAW TCP Connections
 
@@ -14,13 +19,19 @@ The final semester assignment is to demonstrate how (L7 Application layer) socke
 
 	![RAW TCP based HTTP server access](./assets/http-server.png)
 
+---
+
 2. Second project: UDP Pinger Client Impelementations
 	
-	The second assignment is to demonstrate how ping messages are implemented using UDP based connections. The server runtime is provided using python. Main assignment is to write up and implement pinger client. It written on Golang instead of python at first, until it was changed back to python as instructed.
+	The second assignment is to demonstrate how ping messages are implemented using UDP based connections. The server runtime is provided using python. The randominess is to simulate UDP transmission error. 
+	
+	The provided server code logic shouldn't be modified to preserve assignment constraints. The code is slightly modified to support debugging purposes. 
 
-	Provided python UDP ping server is slightly modified to support debugging purposes. The randominess is to simulate UDP transmission error.
+	Main assignment is to write up and implement pinger client. It written on Golang instead of python at first, until it was changed back to python as instructed.
 
 	
 	![Golang based UDP pinger client](./assets/ping-go.png)
 
 	![Python based UDP pinger client](./assets/ping-python.png)
+
+	The Golang based is not working properly after first ping is because of how different programming language implements OS scheduling routine. As server is using python based is using IO blocking model, while Go is non-blocking.
