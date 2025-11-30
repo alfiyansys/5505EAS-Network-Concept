@@ -35,3 +35,7 @@ The final semester assignment is to demonstrate how (L7 Application layer) socke
 	![Python based UDP pinger client](./assets/ping-python.png)
 
 	The Golang based is not working properly after first ping is because of how different programming language implements OS scheduling routine. As server is using python based is using IO blocking model, while Go is non-blocking.
+
+	Based on Pytho3 based UDP ping client, as seen in the image above, the server is running on port 12000. The client is using port 12001. The client is running on localhost, while the server is running on the same machine. Both sides (server and client) are showing in what UNIX time both are communicating, as well as the sequence number.
+	
+	Test results shows loss rate is 50% due to 0..4 range of loss randominess (loss rate should be 40~50% to be exact, valid). With RTT averaging about 0.3ms, max 0.42ms, min 0.2ms.
